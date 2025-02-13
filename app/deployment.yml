@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: real-time-chat-deployment
+spec:
+  replicas: 2  # Scale up the number of instances for redundancy and load balancing
+  selector:
+    matchLabels:
+      app: real-time-chat
+  template:
+    metadata:
+      labels:
+        app: real-time-chat
+    spec:
+      containers:
+      - name: real-time-chat
+        image: yas8880/real-time-chat:latest
+        ports:
+        - containerPort: 8080
+        resources:  # Add resources here
+          requests:
+            memory: "64Mi"    # Minimum memory requested
+            cpu: "250m"       # Minimum CPU requested
+          limits:
+            memory: "128Mi"   # Maximum memory allowed
+            cpu: "500m"       # Maximum CPU allowed
+
+
