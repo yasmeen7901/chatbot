@@ -51,6 +51,11 @@ kubectl delete -f service.yaml
 kubectl delete -f hpa.yaml
 ```
 
+**6️⃣ RUN**
+wscat -c ws://<EXTERNAL-IP>:8080
+
+
+
 ---
 
 That's it! 🚀
