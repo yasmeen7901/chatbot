@@ -51,7 +51,7 @@ This project implements a **real-time chat system** using WebSockets, containeri
 🔹 Implement **Ingress Controller** for external traffic management 🌐  
 🔹 Deploy on **AWS EKS** for a managed Kubernetes experience ☁️  
 🔹 Add **Load Balancer** for better traffic distribution ⚖️  
-🔹 Enhance security with **TLS Encryption & Authentication** 🔒  
+🔹 Enhance security with **Authentication** 🔒  
 
 ---
 
